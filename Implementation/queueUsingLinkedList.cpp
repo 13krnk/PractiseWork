@@ -1,8 +1,7 @@
 /**
  * Queue implementation using LinkedList
- * push(int d)   - O(n) - add at end when node passing
- * push(Node n1, int d)  - O(1) -  add after given node 
- * pop()         O(1)   - delete at front 
+ * push(int d)   - O(1) - add at end ; enqueue
+ * pop()         O(1)   - delete at front ; dequeue
  * front()       O(1)  - front node maintained
  * rear()       O(1)   - rear node maintained
  */
@@ -34,16 +33,12 @@ public:
     void push(int d)
     {
         Node *newnode = new Node(d);
-        if(front == NULL)
+        if(rear == NULL)
         {
             front = rear = newnode;
         }
         else
         {
-            while(rear->next != NULL)
-            {
-                rear = rear->next;
-            }
             rear->next = newnode;
             rear = newnode;
         }        
@@ -51,13 +46,17 @@ public:
     // delete at front
     void pop()
     {
-        if(rear == NULL)
+        if(front == NULL)
         {
             return;
         }
         Node *temp = front->next;
         free(front);
         front = temp;
+        if(front == NULL)
+        {
+            rear = NULL;
+        }
     }
     // last added element
     int getrear()
