@@ -7,4 +7,4 @@ Some important useful resource and my failures.:(\
 Preparation coverage from various sources.
 
 --\
-contribiutions on this repo is highly appreciated.
+Feel free to comment if anything wrong.
