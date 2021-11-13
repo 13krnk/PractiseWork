@@ -5,6 +5,5 @@ sub folders of Data structures with some questions & answers.
 --\
 Preparation coverage from various sources.
 --\
-Feel free to comment if anything wrong.
+Feel free to comment/review if anything is wrong.
 
-I failed many times due to various reasons so, with this atleast I can help someone in fulfilling theirs.
