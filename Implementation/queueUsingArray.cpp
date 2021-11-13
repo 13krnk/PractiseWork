@@ -1,6 +1,9 @@
 /**
  * queue Implementation using array
  * Adding from one end and deleting from other end
+ * 
+ * // push pop front O(1)
+ * array fixed size defined and no extra allocation and copying happened.
  */
 
 #include<iostream>
@@ -45,7 +48,7 @@ void pop()
         cout<<"Queue is Empty"<<endl;
         return ;
     }
-    if(front == rear)
+    if(front == rear) // single element exist
     {
         front = rear = -1;
     }
@@ -88,10 +91,9 @@ int main()
     q->pop();  // front 2
     q->push(4); 
     q->push(5);  
-    q->push(6);  // full, draqback even empty space availble but not using
-                  // circular queue required.  
+    q->push(6);  // full, drawback even empty space availble but not using
+                  // thats why circular queue required.  
     cout<<q->getfront()<<endl; // 2
-    cout<<q->getback()<<endl;  // 5
-    
+    cout<<q->getback()<<endl;  // 5  
     return 0;
 }
