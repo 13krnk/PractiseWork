@@ -1,10 +1,9 @@
 # PractiseWork
-This is truly for learning and practise work purpose.\
+Learning and practise work purpose.\
 sub folders of Data structures with some questions & answers.
 
 --\
-Some important useful resource and my failures.:(\
 Preparation coverage from various sources.
-
 --\
-contribiutions on this repo is highly appreciated.
+Feel free to comment/review if anything is wrong.
+
